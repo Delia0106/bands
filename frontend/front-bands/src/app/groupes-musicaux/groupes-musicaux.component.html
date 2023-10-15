@@ -1,0 +1,57 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nom du Groupe</th>
+    <th>Origine</th>
+    <th>Ville</th>
+    <th>Annee de Debut</th>
+    <th>Annee de Separation</th>
+    <th>Fondateurs</th>
+    <th>Membres</th>
+    <th>Courant musical</th>
+    <th>Presentation</th>
+    <th>Effacer</th>
+    <th>Actualiser</th>
+  </tr>
+  <tr *ngFor="let groupe of groupesMusicaux">
+    <td>{{ groupe.id }}</td>
+    <td>
+      <input [(ngModel)]="groupe.nomDuGroupe" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.origine" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.ville" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.anneeDebut" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.anneeSeparation" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.fondateurs" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.membres" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.courantMusical" />
+    </td>
+    <td>
+      <input [(ngModel)]="groupe.presentation" />
+    </td>
+
+    <td>
+      <button (click)="supprimerLigne(groupe.id)">
+        <mat-icon aria-hidden="false">delete</mat-icon>
+      </button>
+    </td>
+    <td>
+      <button (click)="actualiserGroupeMusical(groupe.id, groupe)">
+        Actualiser
+      </button>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,8 @@
+<div class="container">
+  <h3 class="title">Uploader un document excel, le résultat sera affiché dans un tableau ci-dessous après actualisation du navigateur.</h3>
+  <form (submit)="uploadFile()">
+    <input class="custom-file-input" type="file" (change)="onFileSelected($event)" accept=".xlsx" />
+    <button type="submit">Uploader</button>
+  </form>
+  <h4 class="title">Pour supprimer un groupe musical sur chaque ligne, vous disposez d'un bouton avec une icône de suppression, et pour mettre à jour, écrivez directement dans la case appropriée et appuyez sur le bouton de mise à jour.</h4>
+</div>

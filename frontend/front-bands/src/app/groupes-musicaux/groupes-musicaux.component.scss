@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+  border: 2px solid #000; /* Add a 2px solid black border to the table */
+}
+
+th {
+  background-color: #007bff;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+}
+
+td {
+  border: 1px solid#000000;
+  text-align: center;
+  padding: 8px;
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #cce6ff;
+}

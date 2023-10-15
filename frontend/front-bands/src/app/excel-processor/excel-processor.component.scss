@@ -1,0 +1,38 @@
+.container {
+  margin: 10px;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 10pt;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "Sélectionner des fichiers";
+  display: inline-block;
+  font-weight: 700;
+  font-size: 10pt;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
